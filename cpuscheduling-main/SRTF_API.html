@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRTF with AI API</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h1>SRTF - Scheduling Algorithm with AI API</h1>
+    <h3>Preferences :</h3>
+    <ol class="preferences">
+        <li>
+            Priority : 1 is
+            <button id="priority-toggle-btn">
+                <span id="priority-preference">high</span>
+                <i class="fa fa-refresh"></i>
+            </button>
+        </li>
+    </ol>
+
+    <div class="api-key-section">
+        <label for="api-key">OpenAI API Key:</label>
+        <input type="password" id="api-key" placeholder="Enter your OpenAI API key">
+        <button id="save-key">Save Key</button>
+        <span id="api-status"></span>
+    </div>
+
+    <table class="main-table">
+        <thead>
+            <tr>
+                <th rowspan="2">Process</th>
+                <th rowspan="2">Arrival Time</th>
+                <th class="process-time" colspan="">Process Time</th>
+                <th colspan="2">Options</th>
+            </tr>
+            <tr class="sub-head process-input">
+                <th>CPU</th>
+                <th colspan="2"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="process-id" rowspan="2">P1</td>
+                <td class="arrival-time" rowspan="2"><input type="number" min="0" step="1" value="0"></td>
+                <td class="process-time cpu process-heading" colspan="">CPU</td>
+                <td class="process-btn"><button type="button" class="add-process-btn">+</button></td>
+                <td class="process-btn"><button type="button" class="remove-process-btn">-</button></td>
+            </tr>
+            <tr>
+                <td class="process-time cpu process-input"><input type="number" min="1" step="1" value="1"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <button type="button" class="add-btn">Add Process</button>
+    <button type="button" class="remove-btn">Delete Process</button>
+    <div id="context-switch-div">
+        <br>
+        <label for="context-switch">Context Switch Time : </label>
+        <input type="number" name="Context Switch" id="context-switch" min="0" step="1" value="0">
+    </div>
+    <br>
+    <button type="button" id="calculate">Calculate</button>
+    <button type="button" id="reset" onClick="window.location.reload();">Reset</button>
+    <button type="button" id="ai-review-btn" style="display: none;">Get AI Review</button>
+    <div id="ai-review-output" style="margin-top: 20px; padding: 10px; border: 1px solid #ccc; display: none;"></div>
+    <div id="output"></div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="srtfjs_api.js"></script>
+</body>
+
+</html>
