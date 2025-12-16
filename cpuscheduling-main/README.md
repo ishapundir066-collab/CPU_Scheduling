@@ -1,34 +1,52 @@
-## Welcome to GitHub Pages
+🌐 Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/pathik455/CPU-scheduling/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+You can use the GitHub editor to maintain and preview your website content written in Markdown.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+✏️ Edit your site here:
+Open Markdown Editor
 
-### Markdown
+Whenever you commit changes to this repository, GitHub Pages automatically builds and deploys your site using Jekyll.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+🔗 Learn more about Jekyll:
+https://jekyllrb.com/
 
-```markdown
-Syntax highlighted code block
+📝 Markdown Basics
 
+Markdown is a lightweight, easy-to-use syntax for formatting text.
+
+✨ Common Markdown Syntax
 # Header 1
 ## Header 2
 ### Header 3
 
-- Bulleted
-- List
+- Bullet item
+- Another item
 
-1. Numbered
-2. List
+1. Numbered item
+2. Another item
 
-**Bold** and _Italic_ and `Code` text
+**Bold text**
+_Italic text_
+`Inline code`
 
-[Link](url) and ![Image](src)
-```
+[Link](https://example.com)
+![Image](image.png)
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+📘 Learn More About Markdown
 
-### Jekyll Themes
+For detailed formatting options, refer to GitHub’s official documentation:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pathik455/CPU-scheduling/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+👉 Basic Writing and Formatting Syntax
+
+🎨 Jekyll Themes
+
+Your GitHub Pages site uses a Jekyll theme selected in the repository settings.
+
+Theme configuration is stored in the _config.yml file
+
+You can change the theme anytime from:
+Repository → Settings → Pages
+
+🔧 Theme settings link:
+https://github.com/pathik455/CPU-scheduling/settings/pages
 
